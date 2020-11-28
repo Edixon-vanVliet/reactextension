@@ -50,7 +50,7 @@ const promptAndSave = (args: any, templatetype: string) => {
 	vscode.window.showInputBox({ 
 		ignoreFocusOut: true,
 		prompt: 'Please enter component name',
-		value: `new ${templatetype}`
+		value: `New ${templatetype}`
 	}).then(componentName => {
 		if (typeof componentName === 'undefined') {
 			return;
